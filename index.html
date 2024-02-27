@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="CSS/styles.css" />
+  </head>
+  <body>
+    <div class="nav-wrapper">
+      <nav>
+        <ul class="nav-list">
+          <img id="logo" src="images/employee logo.jpg" alt="" />
+          <li><a href="#">Account</a></li>
+          <li><a href="#">Logout</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div>
+      <h2>Employees</h2>
+
+      <div class="employee-background-card">
+        <div class="card-flex">
+          <div class="employee-card">
+            <img class="employee-image" src="images/Ashton Jacobs.jpg" alt="" />
+            <div>
+              <h3 class="employee-name">Ashton Jacobs</h3>
+              <p>Developer</p>
+              <p>Tech Department</p>
+              <p>ajacobs@jcoaches.com</p>
+              <p>$80,000</p>
+            </div>
+          </div>
+
+          <div class="employee-card">
+            <img class="employee-image" src="images/Ashton Jacobs.jpg" alt="" />
+            <div>
+              <h3 class="employee-name">Ashton Jacobs</h3>
+              <p>Developer</p>
+              <p>Tech Department</p>
+              <p>ajacobs@jcoaches.com</p>
+              <p>$80,000</p>
+            </div>
+          </div>
+
+          <div class="employee-card">
+            <img class="employee-image" src="images/Ashton Jacobs.jpg" alt="" />
+            <div>
+              <h3 class="employee-name">Ashton Jacobs</h3>
+              <p>Developer</p>
+              <p>Tech Department</p>
+              <p>ajacobs@jcoaches.com</p>
+              <p>$80,000</p>
+            </div>
+          </div>
+
+          <div class="employee-card">
+            <img class="employee-image" src="images/Ashton Jacobs.jpg" alt="" />
+            <div>
+              <h3 class="employee-name">Ashton Jacobs</h3>
+              <p>Developer</p>
+              <p>Tech Department</p>
+              <p>ajacobs@jcoaches.com</p>
+              <p>$80,000</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="background-interview-card">
+      <h3>Upcoming Interviews</h3>
+      <div class="interview-card">
+        <div class="interview-info">
+          <p>Marketing</p>
+          <p>Social Media Content Specialist</p>
+          <button class="btn-red">Accept</button>
+          <button class="btn-green">Reject</button>
+        </div>
+      </div>
+
+      <div class="interview-card">
+        <div class="interview-info">
+          <p>Marketing</p>
+          <p>Social Media Content Specialist</p>
+          <button class="btn-red">Accept</button>
+          <button class="btn-green">Reject</button>
+        </div>
+      </div>
+
+      <div class="interview-card">
+        <div class="interview-info">
+          <p>Marketing</p>
+          <p>Social Media Content Specialist</p>
+          <button class="btn-red">Accept</button>
+          <button class="btn-green">Reject</button>
+        </div>
+      </div>
+    </div>
+
+    <div id="employeeModal" class="modal">
+      <div class="modal-content">
+        <header class="modal-header">
+          <div class="modal-header-content">
+            <span>Add Employee</span>
+          </div>
+        </header>
+        <div class="modal-container">
+          <label for="fname">First Name</label>
+          <input type="text" id="name" />
+          <br />
+          <label for="fname"> Last Name</label>
+          <input type="text" id="surname" />
+          <br />
+          <label for="fname"> Position</label>
+          <input type="text" id="position" />
+          <br />
+          <label for="fname"> Department</label>
+          <input type="text" id="department" />
+          <br />
+          <label for="fname"> Email</label>
+          <input type="text" id="email" />
+          <br />
+          <label for="fname"> Salary</label>
+          <input type="text" id="salary" />
+          <br />
+          <button class="confirm-btn" onclick="addEmployee()">Confirm</button>
+          <button class="cancel-btn">Cancel</button>
+          <br />
+        </div>
+      </div>
+    </div>
+    <div id="interviewModal" class="modal">
+      <div class="modal-content">
+        <header class="modal-header">
+          <div class="modal-header-content">
+            <span>Add Interview</span>
+          </div>
+        </header>
+
+        <label for=""> Department</label>
+        <input type="text" id="int-department" />
+        <br />
+        <label for=""> Position</label>
+        <input type="text" id="int-position" />
+        <br />
+        <button class="confirm-int-btn" onclick="addInterview()">
+          Confirm
+        </button>
+        <button class="int-cancel-btn">Cancel</button>
+      </div>
+      <footer class="modal-footer"></footer>
+    </div>
+
+    <footer class="modal-footer">
+      <button
+        class="btn"
+        type="button"
+        name="button"
+        onclick="showAddIntModal()"
+      >
+        Add Interview
+      </button>
+      <button
+        class="btn"
+        type="button"
+        name="button"
+        onclick="showAddEmpModal()"
+      >
+        Add Employee
+      </button>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

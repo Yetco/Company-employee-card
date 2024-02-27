@@ -1,0 +1,292 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+/*
+  Typographic tweaks!
+  3. Add accessible line-height
+  4. Improve text rendering
+*/
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+/*
+  5. Improve media defaults
+*/
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+/*
+  6. Remove built-in form typography styles
+*/
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+/*
+  7. Avoid text overflows
+*/
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+/*
+  8. Create a root stacking context
+*/
+#root,
+#__next {
+  isolation: isolate;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.nav-wrapper {
+  background-color: white;
+  width: 100%;
+  padding: 5px;
+  position: sticky;
+  top: 0;
+  box-shadow: 3px 3px 5px 6px #ccc;
+  z-index: 100;
+}
+
+#logo {
+  max-width: 200px;
+}
+
+.nav-list {
+  display: flex;
+  justify-content: space-around;
+  align-items: stretch;
+  width: 100%;
+  list-style: none;
+  padding: 0;
+}
+
+.nav-list li {
+  display: inline;
+  margin: 0;
+  padding-top: 50px;
+}
+
+.nav-list li a {
+  text-decoration: none;
+  color: #800;
+  padding: 22px;
+}
+
+h2 {
+  margin: 1em;
+}
+
+.card-flex {
+  display: flex;
+  justify-content: space-around;
+}
+
+.employee-background-card {
+  background-color: #f2f2f2;
+  padding: 20px;
+  margin: 20px;
+  max-width: 100%;
+  display: inline-flex;
+  flex-wrap: wrap;
+}
+
+.employee-card {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 100%;
+  gap: 20px;
+  padding: 20px;
+  margin-top: 20px;
+  margin-left: 20px;
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: 3px 5px 5px 0px black;
+}
+
+.employee-name {
+  color: #800;
+}
+
+.employee-image {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 3px solid #800;
+}
+
+.background-interview-card {
+  background-color: #f2f2f2;
+  padding: 20px;
+  margin: 20px;
+  max-width: 100%;
+  display: inline-block;
+}
+
+.interview-card {
+  width: 375px;
+  padding: 20px;
+  margin-top: 40px;
+  background-color: white;
+  box-shadow: 3px 5px 5px 0px black;
+}
+
+.interview-card p {
+  padding: 10px 0;
+}
+
+button {
+  margin-top: 10px;
+}
+
+.btn-red {
+  width: auto;
+  background-color: red;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+}
+
+.btn-green {
+  width: auto;
+  background-color: green;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+}
+
+#employeeModal {
+  text-align: center;
+  width: 30%;
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 10px;
+  position: absolute;
+  top: 40%;
+  left: 40%;
+  background-color: white;
+}
+
+.modal-header {
+  border-radius: 10px 10px 0 0;
+  background-color: #800;
+}
+
+.modal-header-content {
+  font-size: 1.2rem;
+  padding: 20px 0 20px 0;
+  font-weight: bold;
+}
+
+.confirm-btn {
+  margin: 30px;
+  float: right;
+}
+
+.name-format {
+  color: #1b91db;
+  font-weight: bold;
+}
+
+input {
+  width: 50%;
+  padding: 12px;
+  margin: 8px 0;
+  display: inline-block;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.confirm-btn {
+  width: auto;
+  border: none;
+  color: white;
+  padding: 8px 12px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #36bc65;
+}
+
+#interviewModal {
+  text-align: center;
+  width: 30%;
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 10px;
+  position: absolute;
+  top: 40%;
+  left: 40%;
+  background-color: white;
+}
+
+.confirm-int-btn {
+  width: auto;
+  border: none;
+  color: white;
+  padding: 8px 12px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #36bc65;
+  margin: 30px;
+  float: right;
+}
+
+.cancel-btn,
+.int-cancel-btn {
+  width: auto;
+  border: none;
+  color: white;
+  padding: 8px 12px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: red;
+  margin: 30px;
+  float: right;
+}
+
+.btn {
+  float: right;
+  background-color: #36bc65;
+  color: white;
+  width: 8%;
+  border: none;
+  padding: 12px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  margin-right: 2%;
+}
